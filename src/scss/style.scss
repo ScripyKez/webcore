@@ -1,17 +1,17 @@
-$bgColor: #24292e;
-$text: #fff;
+@import './_variables';
+@import './main.scss';
+@import './brands.scss';
+@import '../../node_modules/swiper/swiper-bundle.css';
 
 @font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
+  font-family: 'TTLakes';
+  src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
   font-weight: normal;
-  font-style: italic;
 }
 
-body {
-  padding: 1rem;
+* {
   margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fs-family;
 }

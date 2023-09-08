@@ -1,0 +1,203 @@
+.slider-header__title {
+  text-align: left;
+  font-size: $fs-normal;
+  color: $gray-color;
+  text-transform: uppercase;
+
+  background: linear-gradient(90deg, $bg-color 1.39%, #ffffff 100%);
+
+  margin: -16px -24px;
+  padding: 16px 24px;
+}
+
+/* .partners__brands{
+	padding: 24px;
+	
+
+	display: grid;
+
+	grid-template-columns: repeat(auto-fill, minmax(224px, max-content));
+
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 16px 24px;
+
+	
+	height: 200px;
+
+	
+	overflow-y: hidden;
+	
+}*/
+
+.swiper {
+  margin-top: 32px;
+  min-width: 300px;
+
+  position: relative;
+}
+
+.swiper-1 {
+  height: 120px;
+}
+
+.swiper-2 {
+  height: 210px;
+}
+
+.swiper-3 {
+  height: 250px;
+}
+
+.swiper::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 100%;
+
+  background: linear-gradient(
+    270deg,
+    $bg-color 16.84%,
+    rgba(248, 248, 248, 0.0001) 100%
+  );
+  position: absolute;
+  right: 0;
+  top: center;
+  z-index: 10;
+}
+
+.swiper-container {
+  background-color: $bg-color;
+  padding: 16px 24px;
+}
+
+.swiper-pagination-bullet {
+  height: 12px !important;
+  width: 12px !important;
+  background-color: #b5b6bc !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #dddddd !important;
+}
+
+.card__link {
+  min-width: 224px;
+  max-width: 240px;
+  height: 72px;
+
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  background-color: white;
+
+  display: block;
+
+  padding: 16px;
+  color: $black-color;
+
+  position: relative;
+
+  &::before {
+    content: '';
+    height: 40px;
+    width: 40px;
+    border: 2px solid $btn-color;
+    border-radius: 50%;
+
+    position: absolute;
+
+    right: 16px;
+    bottom: 16px;
+    background: url(../img/dropdown.svg) no-repeat center;
+  }
+}
+
+.card__link--samsung {
+  background: url('../img/brands/samsung.jpg') no-repeat 15px center, white;
+}
+
+.card__link--apple {
+  background: url('../img/brands/apple.jpg') no-repeat 15px center, white;
+}
+
+.card__link--hp {
+  background: url('../img/brands/hp.jpg') no-repeat 15px center, white;
+}
+
+.card__link--viewsonic {
+  background: url('../img/brands/viewsonic.jpg') no-repeat 15px center, white;
+}
+
+.card__link--acer {
+  background: url('../img/brands/acer.jpg') no-repeat 15px center, white;
+}
+
+.card__link--lenovo {
+  background: url('../img/brands/lenovo.jpg') no-repeat 15px center, white;
+}
+.card__link--bosch {
+  background: url('../img/brands/bosch.jpg') no-repeat 15px center, white;
+}
+
+.swiper-container__read-more {
+  display: none;
+  margin-top: 10px;
+}
+
+.card__link--service {
+  height: 160px;
+}
+
+.card__link--order {
+  height: 200px;
+
+  &::before {
+    content: 'Заказать';
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    padding: 4px 12px;
+
+    display: flex;
+    align-items: center;
+
+    height: 24px;
+    width: 95px;
+    border: 2px solid $btn-color;
+    border-radius: 16px;
+
+    position: absolute;
+
+    right: 16px;
+    bottom: 16px;
+    background: url(../img/dropdownwhite.svg) no-repeat 90%, $btn-color;
+
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper-container__read-more {
+    display: block;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+  .swiper {
+    height: auto;
+  }
+  .swiper::before {
+    display: none;
+  }
+  .swiper-wrapper {
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(224px, max-content));
+    gap: 15px 24px;
+    justify-content: space-between;
+  }
+
+  .swiper-container {
+    height: auto !important;
+  }
+}
