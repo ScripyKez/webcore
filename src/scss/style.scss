@@ -1,12 +1,21 @@
 @import './_variables';
 @import './main.scss';
 @import './brands.scss';
+@import './get-call.scss';
+@import './footer.scss';
 @import '../../node_modules/swiper/swiper-bundle.css';
 
 @font-face {
   font-family: 'TTLakes';
   src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
   font-weight: normal;
+}
+
+@font-face {
+  font-family: 'TTLakes';
+  src: url('../fonts/TTLakes-DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
 }
 
 * {

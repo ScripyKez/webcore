@@ -1,0 +1,19 @@
+.get-call {
+  padding: 0 24px;
+
+  max-width: 600px;
+  font-size: 14px;
+
+  & .get-call__btn {
+    margin-top: 16px;
+  }
+}
+
+.call-btn {
+  color: $black-color;
+  font-size: $fs-normal;
+	font-weight: 600;
+
+	padding-right: 15px;
+	background: url(../img/dropdown.svg) no-repeat right;
+}
