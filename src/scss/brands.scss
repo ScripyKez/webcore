@@ -45,9 +45,7 @@
   height: 210px;
 }
 
-.swiper-3 {
-  height: 250px;
-}
+
 
 .swiper::before {
   content: '';
@@ -148,32 +146,6 @@
   height: 160px;
 }
 
-.card__link--order {
-  height: 200px;
-
-  &::before {
-    content: 'Заказать';
-    text-transform: uppercase;
-    color: white;
-    font-size: 12px;
-    padding: 4px 12px;
-
-    display: flex;
-    align-items: center;
-
-    height: 24px;
-    width: 95px;
-    border: 2px solid $btn-color;
-    border-radius: 16px;
-
-    position: absolute;
-
-    right: 16px;
-    bottom: 16px;
-    background: url(../img/dropdownwhite.svg) no-repeat 90%, $btn-color;
-
-  }
-}
 
 @media (min-width: 768px) {
   .swiper-container__read-more {

@@ -11,7 +11,20 @@
   flex-direction: column;
   gap: 16px;
   justify-content: space-between;
-	& span{
-		display: block;
-	}
+  & span {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    & .footer__item:first-child {
+      text-align: start;
+    }
+    & .footer__item:last-child {
+      text-align: end;
+    }
+  }
 }

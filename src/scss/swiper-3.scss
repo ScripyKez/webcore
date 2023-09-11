@@ -1,0 +1,78 @@
+.swiper-3 {
+  height: 250px;
+  & .card__link--order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & span {
+      display: block;
+      color: $gray-color;
+    }
+  }
+  & .card {
+    font-size: $fs-secondary;
+  }
+}
+
+.card__link--order {
+  height: 200px;
+
+  &::before {
+    content: 'Заказать';
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    padding: 4px 12px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+
+    height: 20px;
+    width: 75px;
+    border: 2px solid $btn-color;
+    border-radius: 16px;
+
+    position: absolute;
+
+    right: 16px;
+    bottom: 16px;
+    background: url(../img/dropdownwhite.svg) no-repeat 90%, $btn-color;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper-3 {
+    height: auto;
+    & .swiper-wrapper {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    & .card__link--order {
+      border: none;
+      max-width: 100%;
+      max-height: 65px;
+
+      display: grid;
+      grid-template-columns: 1fr 74px 85px 120px;
+      gap: 24px;
+
+      align-items: center;
+
+      &::after {
+        content: '';
+
+        background: #eaeaea;
+        height: 1px;
+        width: 97%;
+				position: absolute;
+				bottom: 0;
+				left: 10px;
+      }
+
+      & span {
+        display: none;
+      }
+    }
+  }
+}
