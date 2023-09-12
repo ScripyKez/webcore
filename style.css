@@ -1199,7 +1199,8 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 16px;
-  position: relative; }
+  position: relative;
+  margin: 0; }
 
 .main__title::before {
   content: '';
