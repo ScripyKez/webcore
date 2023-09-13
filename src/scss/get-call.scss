@@ -1,5 +1,5 @@
 .get-call {
-  padding: 0 24px;
+  padding: 0 24px 47px;
 
   max-width: 600px;
   font-size: 14px;
@@ -12,8 +12,8 @@
 .call-btn {
   color: $black-color;
   font-size: $fs-normal;
-	font-weight: 600;
+  font-weight: 600;
 
-	padding-right: 15px;
-	background: url(../img/dropdown.svg) no-repeat right;
+  padding-right: 15px;
+  background: url(../img/dropdown.svg) no-repeat right;
 }

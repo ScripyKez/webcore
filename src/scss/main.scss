@@ -197,6 +197,7 @@ body {
 
 .article {
   margin-top: 24px;
+  padding-bottom: 32px;
 }
 
 .article__text {
@@ -259,6 +260,9 @@ body {
   display: none;
 }
 
+.border-bottom {
+  border-bottom: 1px solid #d9fff5;
+}
 @media (min-width: 768px) and (max-width: 1119px) {
   .nav__logo {
     margin-left: 40px; /*Поменять на 40 в планшете*/
@@ -384,5 +388,11 @@ body {
 
   .main__title {
     padding-top: 42px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .main {
+    padding-left: 320px;
   }
 }

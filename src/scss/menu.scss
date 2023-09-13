@@ -1,0 +1,152 @@
+.menu {
+  position: fixed;
+  padding: 23px 24px 32px 24px;
+  width: 320px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  color: #1b1c21;
+
+  background: #fff;
+
+  box-shadow: 16px 0px 52px 0px #0e185033;
+	display: none;
+}
+
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__nav-icon--close {
+  background: url('../img/burger-close.svg');
+  margin-right: 16px;
+}
+
+.menu__nav-icon--search {
+  background: url('../img/search.svg'); /*Поменять с макета*/
+  margin-left: auto;
+}
+
+.links {
+  margin-top: 50px;
+  font-family: TT Lakes;
+  font-size: 16px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.menu__links-item--link {
+  display: block;
+  padding: 16px 0;
+}
+
+.menu__links-item {
+  position: relative;
+  transition: all 0.2s linear;
+}
+
+.menu__links-item--active {
+  color: #7e7e82;
+}
+
+.menu__links-item--active::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 32px;
+  background-color: #41f6d7;
+  position: absolute;
+  top: 8px;
+  left: -24px;
+  border-radius: 0 20px 20px 0;
+}
+
+.menu__links-item:hover::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 32px;
+  background-color: #41f6d7;
+  position: absolute;
+  top: 8px;
+  left: -24px;
+  border-radius: 0 20px 20px 0;
+}
+
+.menu__footer {
+  margin-top: auto;
+	margin-bottom: 20px;
+}
+
+.menu__footer .nav-icon {
+  margin-left: 16px;
+}
+
+.menu__footer .nav-icon:first-child {
+  margin-left: 0;
+}
+
+.menu__nav-icon--call {
+  background: url('../img/call.svg');
+}
+
+.menu__nav-icon--message {
+  background: url('../img/chat.svg');
+}
+
+.menu__nav-icon--profile {
+  background: url('../img/profile.svg');
+}
+
+.menu__contact-info {
+  margin-top: 16px;
+}
+
+.menu__contact-info--number {
+  margin-top: 12px;
+  font-size: 24px;
+
+  font-weight: bold;
+}
+
+.langs {
+  display: flex;
+  font-weight: 500;
+}
+
+.langs > li {
+  margin-right: 7px;
+}
+
+.menu__langs {
+  margin-top: 40px;
+}
+
+.menu__lang:hover {
+  color: #7e7e82;
+}
+
+.menu__lang--active {
+  color: #7e7e82;
+}
+
+.nav-icon:hover {
+  opacity: 0.2;
+}
+
+@media (min-width: 1120px) {
+  .menu {
+		display: flex;
+    box-shadow: none;
+  }
+  .menu__nav-icon--close {
+    display: none;
+  }
+}

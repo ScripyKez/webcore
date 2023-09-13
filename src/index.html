@@ -28,214 +28,279 @@
       </nav>
     </header>
     <main class="main">
-      <h1 class="title main__title">Услуги и сервисы</h1>
-      <nav class="nav main__nav">
-        <button class="nav-icon nav__repair"> Оставить заявку </button>
-        <button class="nav-icon nav__search"> Статус Ремонта </button>
-      </nav>
-      <ul class="slide-menu main__slide-menu">
-        <li class="slide-menu__item slide-menu__item--active">
-          <a href="#">Ремонтируемые бренды</a>
-        </li>
-        <li class="slide-menu__item"
-          ><a href="#">Ремонтируемые устройства</a></li
-        >
-        <li class="slide-menu__item"><a href="#">Цены на услуги</a></li>
-        <li class="slide-menu__item"
-          ><a href="#">Адреса сервисных центров</a></li
-        >
-        <li class="slide-menu__item"><a href="#">Специальные цены</a></li>
-        <li class="slide-menu__item"><a href="#">Отзывы</a></li>
-      </ul>
-      <article class="article">
-        <div class="article__news-text">
-          <p class="article__text">
-            Мы являемся авторизованным сервисным центром по ремонту техники
-            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-            официальной гарантией производителя.
-          </p>
-          <p class="article__text">
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного
-            партнера, что подтверждает большое количество постоянных клиентов.
-            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-            очередь, советуют нас родным и близким.
-          </p>
-          <button class="read-more article__read-more">Читать далее</button>
+      <aside class="menu">
+        <div class="menu__header">
+          <button class="nav-icon menu__nav-icon--close">
+            <span>Открыть/закрыть меню</span>
+          </button>
+          <img src="./img/Group.jpg" alt="" class="logo" />
+          <button class="nav-icon menu__nav-icon--search">
+            <span>Поиск</span>
+          </button>
         </div>
+        <ul class="links menu__links">
+          <li class="menu__links-item menu__links-item--active">
+            <a href="#" class="menu__links-item--link">Ремонт техники</a>
+          </li>
+          <li class="menu__links-item">
+            <a href="#" class="menu__links-item--link">Услуги и сервисы</a>
+          </li>
+          <li class="menu__links-item">
+            <a href="#" class="menu__links-item--link"
+              >Корпоративным клиентам</a
+            >
+          </li>
+          <li class="menu__links-item">
+            <a href="#" class="menu__links-item--link">Продавцам техники</a>
+          </li>
+          <li class="menu__links-item">
+            <a href="#" class="menu__links-item--link">Партнерам</a>
+          </li>
+          <li class="menu__links-item">
+            <a href="#" class="menu__links-item--link">Производителям</a>
+          </li>
+          <li class="menu__links-item">
+            <a href="#" class="menu__links-item--link">Наши сервисные центры</a>
+          </li>
+          <li class="menu__links-item">
+            <a href="#" class="menu__links-item--link">Контакты</a>
+          </li>
+        </ul>
+        <div class="menu__footer">
+          <div class="buttons menu__buttons">
+            <button class="nav-icon menu__nav-icon--call">
+              <span>Звонок</span>
+            </button>
+            <button class="nav-icon menu__nav-icon--message">
+              <span>Сообщения</span>
+            </button>
+            <button class="nav-icon menu__nav-icon--profile">
+              <span>Профиль</span>
+            </button>
+          </div>
+          <div class="contact-info menu__contact-info">
+            <p class="menu__contact-info--email">mail@cps.com</p>
+            <p class="menu__contact-info--number">8 800 890 8900</p>
+          </div>
+          <ul class="langs menu__langs">
+            <li class="menu__lang menu__lang--ru menu__lang--active"
+              ><a href="#">RU</a></li
+            >
+            <li class="menu__lang menu__lang--en"><a href="#">EN</a></li>
+            <li class="menu__lang menu__lang--ch"><a href="#">CH</a></li>
+          </ul>
+        </div>
+      </aside>
+      <section
+        ><h1 class="title main__title">Услуги и сервисы</h1>
+        <nav class="nav main__nav">
+          <button class="nav-icon nav__repair"> Оставить заявку </button>
+          <button class="nav-icon nav__search"> Статус Ремонта </button>
+        </nav>
+        <ul class="slide-menu main__slide-menu">
+          <li class="slide-menu__item slide-menu__item--active">
+            <a href="#">Ремонтируемые бренды</a>
+          </li>
+          <li class="slide-menu__item"
+            ><a href="#">Ремонтируемые устройства</a></li
+          >
+          <li class="slide-menu__item"><a href="#">Цены на услуги</a></li>
+          <li class="slide-menu__item"
+            ><a href="#">Адреса сервисных центров</a></li
+          >
+          <li class="slide-menu__item"><a href="#">Специальные цены</a></li>
+          <li class="slide-menu__item"><a href="#">Отзывы</a></li>
+        </ul>
+        <article class="article border-bottom">
+          <div class="article__news-text">
+            <p class="article__text">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <p class="article__text">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера, что подтверждает большое количество постоянных клиентов.
+              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+            </p>
+            <button class="read-more article__read-more">Читать далее</button>
+          </div>
 
-        <img class="article__image" src="./img/image.png" alt="Фото статьи" />
-      </article>
-      <div class="swiper-container">
-        <h1 class="slider-header__title">Ремонт техники различных брендов</h1>
-        <div class="swiper swiper-1" data-mobile="false">
-          <div class="swiper-wrapper">
-            <div class="card">
-              <a href="" class="card__link card__link--lenovo"></a>
+          <img class="article__image" src="./img/image.png" alt="Фото статьи" />
+        </article>
+        <div class="swiper-container border-bottom">
+          <h1 class="slider-header__title">Ремонт техники различных брендов</h1>
+          <div class="swiper swiper-1" data-mobile="false">
+            <div class="swiper-wrapper">
+              <div class="card">
+                <a href="" class="card__link card__link--lenovo"></a>
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--samsung"></a>
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--apple"></a>
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--bosch"></a>
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--hp"></a>
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--acer"></a>
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--apple"></a>
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--viewsonic"></a>
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--lenovo"></a>
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--samsung"></a>
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--apple"></a>
+              </div>
             </div>
-            <div class="card">
-              <a href="" class="card__link card__link--samsung"></a>
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--apple"></a>
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--bosch"></a>
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--hp"></a>
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--acer"></a>
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--apple"></a>
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--viewsonic"></a>
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--lenovo"></a>
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--samsung"></a>
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--apple"></a>
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
+          <button type="button" class="read-more swiper-container__read-more"
+            >Показать всё</button
+          >
         </div>
-        <button type="button" class="read-more swiper-container__read-more"
-          >Показать всё</button
-        >
-      </div>
-      <div class="swiper-container">
-        <h1 class="slider-header__title">Ремонт техники различных брендов</h1>
-        <div class="swiper swiper-2" data-mobile="false">
-          <div class="swiper-wrapper">
-            <div class="card">
-              <a href="" class="card__link card__link--service"
-                ><p>Ремонт ноутбуков</p></a
-              >
+        <div class="swiper-container border-bottom">
+          <h1 class="slider-header__title">Ремонт техники различных брендов</h1>
+          <div class="swiper swiper-2" data-mobile="false">
+            <div class="swiper-wrapper">
+              <div class="card">
+                <a href="" class="card__link card__link--service"
+                  ><p>Ремонт ноутбуков</p></a
+                >
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--service"
+                  ><p>Ремонт планшетов</p></a
+                >
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--service"
+                  ><p>Ремонт телефонов</p></a
+                >
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--service"
+                  ><p>Ремонт телевизоров</p></a
+                >
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--service"
+                  ><p>Ремонт электроники</p></a
+                >
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--service"
+                  ><p>Ремонт ноутбуков</p></a
+                >
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--service"
+                  ><p>Ремонт ноутбуков</p></a
+                >
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--service"
+                  ><p>Ремонт ноутбуков</p></a
+                >
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--service"
+                  ><p>Ремонт ноутбуков</p></a
+                >
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--service"
+                  ><p>Ремонт ноутбуков</p></a
+                >
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--service"
+                  ><p>Ремонт ноутбуков</p></a
+                >
+              </div>
             </div>
-            <div class="card">
-              <a href="" class="card__link card__link--service"
-                ><p>Ремонт планшетов</p></a
-              >
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--service"
-                ><p>Ремонт телефонов</p></a
-              >
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--service"
-                ><p>Ремонт телевизоров</p></a
-              >
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--service"
-                ><p>Ремонт электроники</p></a
-              >
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--service"
-                ><p>Ремонт ноутбуков</p></a
-              >
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--service"
-                ><p>Ремонт ноутбуков</p></a
-              >
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--service"
-                ><p>Ремонт ноутбуков</p></a
-              >
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--service"
-                ><p>Ремонт ноутбуков</p></a
-              >
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--service"
-                ><p>Ремонт ноутбуков</p></a
-              >
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--service"
-                ><p>Ремонт ноутбуков</p></a
-              >
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
+          <button type="button" class="read-more swiper-container__read-more"
+            >Показать всё</button
+          >
         </div>
-        <button type="button" class="read-more swiper-container__read-more"
-          >Показать всё</button
-        >
-      </div>
-      <div class="swiper-container">
-        <h1 class="slider-header__title">Цена на услгуи</h1>
-        <div class="swiper swiper-3" data-mobile="false">
-          <div class="swiper-wrapper">
-            <div class="card">
-              <a href="" class="card__link card__link--order"
-                ><p><span>Ремонтные услуги</span>Диагностика</p
-                ><p><span>Цена</span>Бесплатно</p
-                ><p><span>Срок</span>30-120 мин</p></a
-              >
+        <div class="swiper-container">
+          <h1 class="slider-header__title">Цена на услгуи</h1>
+          <div class="swiper swiper-3" data-mobile="false">
+            <div class="swiper-wrapper">
+              <div class="card">
+                <a href="" class="card__link card__link--order"
+                  ><p><span>Ремонтные услуги</span>Диагностика</p
+                  ><p><span>Цена</span>Бесплатно</p
+                  ><p><span>Срок</span>30-120 мин</p></a
+                >
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--order"
+                  ><p><span>Ремонтные услуги</span>Замена дисплея</p
+                  ><p><span>Цена</span>Бесплатно</p
+                  ><p><span>Срок</span>30-120 мин</p></a
+                >
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--order"
+                  ><p
+                    ><span>Ремонтные услуги</span>Замена полифонического
+                    динамика</p
+                  ><p><span>Цена</span>1000 Р</p
+                  ><p><span>Срок</span>30-120 мин</p></a
+                >
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--order"
+                  ><p
+                    ><span>Ремонтные услуги</span>Тестирование с выдачей
+                    технического заключения</p
+                  ><p><span>Цена</span>1000 Р</p
+                  ><p><span>Срок</span>30-120 мин</p></a
+                >
+              </div>
+              <div class="card">
+                <a href="" class="card__link card__link--order"
+                  ><p
+                    ><span>Ремонтные услуги</span>Замена программного
+                    обеспечения</p
+                  ><p><span>Цена</span>1000 Р</p
+                  ><p><span>Срок</span>30-120 мин</p></a
+                >
+              </div>
             </div>
-            <div class="card">
-              <a href="" class="card__link card__link--order"
-                ><p><span>Ремонтные услуги</span>Замена дисплея</p
-                ><p><span>Цена</span>Бесплатно</p
-                ><p><span>Срок</span>30-120 мин</p></a
-              >
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--order"
-                ><p
-                  ><span>Ремонтные услуги</span>Замена полифонического
-                  динамика</p
-                ><p><span>Цена</span>1000 Р</p
-                ><p><span>Срок</span>30-120 мин</p></a
-              >
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--order"
-                ><p
-                  ><span>Ремонтные услуги</span>Тестирование с выдачей
-                  технического заключения</p
-                ><p><span>Цена</span>1000 Р</p
-                ><p><span>Срок</span>30-120 мин</p></a
-              >
-            </div>
-            <div class="card">
-              <a href="" class="card__link card__link--order"
-                ><p
-                  ><span>Ремонтные услуги</span>Замена программного
-                  обеспечения</p
-                ><p><span>Цена</span>1000 Р</p
-                ><p><span>Срок</span>30-120 мин</p></a
-              >
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
-      </div>
-      <div class="get-call">
-        <p class="get-call__text"
-          >Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную
-          услугу. Для получения коммерческого предложения на постоянное
-          обслуживание, оставьте заявку.</p
-        >
-        <div class="get-call__btn"
-          ><button class="call-btn"
-            >Получить коммерческое предложение</button
-          ></div
-        >
-      </div>
+        <div class="get-call border-bottom">
+          <p class="get-call__text"
+            >Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.</p
+          >
+          <div class="get-call__btn"
+            ><button class="call-btn"
+              >Получить коммерческое предложение</button
+            ></div
+          >
+        </div></section
+      >
     </main>
     <footer class="footer">
       <p class="footer__item"
