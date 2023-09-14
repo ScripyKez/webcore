@@ -39,13 +39,23 @@
 
 .swiper-1 {
   height: 120px;
+  & .card:nth-child(n + 7) {
+    display: none;
+  }
+  & .card.card--visible {
+    display: block !important;
+  }
 }
 
 .swiper-2 {
   height: 210px;
+  & .card:nth-child(n + 4) {
+    display: none;
+  }
+  & .card.card--visible {
+    display: block !important;
+  }
 }
-
-
 
 .swiper::before {
   content: '';
@@ -94,6 +104,10 @@
   color: $black-color;
 
   position: relative;
+  transition: 0.2s;
+  &:hover {
+    opacity: 0.5;
+  }
 
   &::before {
     content: '';
@@ -146,7 +160,6 @@
   height: 160px;
 }
 
-
 @media (min-width: 768px) {
   .swiper-container__read-more {
     display: block;
@@ -171,5 +184,74 @@
 
   .swiper-container {
     height: auto !important;
+  }
+}
+
+@media (min-width: 1016px) {
+  .swiper-1 {
+    & .card:nth-child(n + 7) {
+      display: block;
+    }
+    & .card:nth-child(n + 9) {
+      display: none;
+    }
+  }
+  .swiper-2 {
+    & .card:nth-child(n + 4) {
+      display: block;
+    }
+    & .card:nth-child(n + 5) {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1120px) {
+  .swiper-1 {
+    & .card:nth-child(n + 9) {
+      display: block;
+    }
+    & .card:nth-child(n + 10) {
+      display: none;
+    }
+  }
+  .swiper-2 {
+    & .card:nth-child(n + 5) {
+      display: block;
+    }
+    & .card:nth-child(n + 7) {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1336px) {
+  .swiper-1 {
+    & .card:nth-child(n + 9) {
+      display: block;
+    }
+    & + .read-more {
+      display: none;
+    }
+  }
+
+  .swiper-2 {
+    & .card:nth-child(n + 7) {
+      display: block;
+    }
+    & .card:nth-child(n + 9) {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1584px) {
+  .swiper-2 {
+    & .card:nth-child(n + 1) {
+      display: block;
+    }
+    & + .read-more {
+      display: none;
+    }
   }
 }
