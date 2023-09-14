@@ -1244,7 +1244,8 @@ body {
   background-color: white; }
 
 .article {
-  margin-top: 24px; }
+  margin-top: 24px;
+  padding-bottom: 32px; }
 
 .article__text {
   font-family: "TTLakes";
@@ -1255,7 +1256,12 @@ body {
   color: #1b1c21;
   font-weight: 400;
   padding: 0 16px;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  transition: all 1s ease; }
+  .article__text.article__text--full {
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content; }
 
 .read-more {
   font-family: "TTLakes";
@@ -1297,6 +1303,9 @@ body {
 .main__nav {
   display: none; }
 
+.border-bottom {
+  border-bottom: 1px solid #d9fff5; }
+
 @media (min-width: 768px) and (max-width: 1119px) {
   .nav__logo {
     margin-left: 40px;
@@ -1329,7 +1338,14 @@ body {
   .article__text + p {
     margin-top: 20px;
     overflow-y: hidden;
-    max-height: 60px; } }
+    max-height: 60px;
+    transition: all 1s ease; }
+    .article__text + p.article__text--full {
+      max-height: -webkit-max-content;
+      max-height: -moz-max-content;
+      max-height: max-content;
+      transition: max-height 1s ease;
+      overflow: visible; } }
 
 @media (min-width: 1120px) {
   .slide-menu {
@@ -1382,6 +1398,136 @@ body {
     display: none; }
   .main__title {
     padding-top: 42px; } }
+
+@media (min-width: 1120px) {
+  .main {
+    padding-left: 320px; } }
+
+.menu {
+  position: fixed;
+  padding: 23px 24px 32px 24px;
+  width: 320px;
+  height: 100vh;
+  top: 0;
+  left: -400px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  color: #1b1c21;
+  background: #fff;
+  box-shadow: 16px 0px 52px 0px #0e185033;
+  transition: 0.5s;
+  z-index: 10; }
+
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.menu__nav-icon--close {
+  background: url(./static/burger-close.svg);
+  margin-right: 16px; }
+
+.menu__nav-icon--search {
+  background: url(./static/search.svg);
+  /*Поменять с макета*/
+  margin-left: auto; }
+
+.links {
+  margin-top: 50px;
+  font-family: TT Lakes;
+  font-size: 16px;
+  text-align: left;
+  font-weight: normal; }
+
+.menu__links-item--link {
+  display: block;
+  padding: 16px 0; }
+
+.menu__links-item {
+  position: relative;
+  transition: all 0.2s linear; }
+
+.menu__links-item--active {
+  color: #7e7e82; }
+
+.menu__links-item--active::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 32px;
+  background-color: #41f6d7;
+  position: absolute;
+  top: 8px;
+  left: -24px;
+  border-radius: 0 20px 20px 0; }
+
+.menu__links-item:hover::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 32px;
+  background-color: #41f6d7;
+  position: absolute;
+  top: 8px;
+  left: -24px;
+  border-radius: 0 20px 20px 0; }
+
+.menu__footer {
+  margin-top: auto;
+  margin-bottom: 20px; }
+
+.menu__footer .nav-icon {
+  margin-left: 16px; }
+
+.menu__footer .nav-icon:first-child {
+  margin-left: 0; }
+
+.menu__nav-icon--call {
+  background: url(./static/call.svg); }
+
+.menu__nav-icon--message {
+  background: url(./static/chat.svg); }
+
+.menu__nav-icon--profile {
+  background: url(./static/profile.svg); }
+
+.menu__contact-info {
+  margin-top: 16px; }
+
+.menu__contact-info--number {
+  margin-top: 12px;
+  font-size: 24px;
+  font-weight: bold; }
+
+.langs {
+  display: flex;
+  font-weight: 500; }
+
+.langs > li {
+  margin-right: 7px; }
+
+.menu__langs {
+  margin-top: 40px; }
+
+.menu__lang:hover {
+  color: #7e7e82; }
+
+.menu__lang--active {
+  color: #7e7e82; }
+
+.nav-icon:hover {
+  opacity: 0.2; }
+
+.menu--isOpen {
+  left: 0; }
+
+@media (min-width: 1120px) {
+  .menu {
+    left: 0;
+    box-shadow: none; }
+  .menu__nav-icon--close {
+    display: none; } }
 
 .slider-header__title {
   text-align: left;
@@ -1572,7 +1718,7 @@ body {
         display: none; } }
 
 .get-call {
-  padding: 0 24px;
+  padding: 0 24px 47px;
   max-width: 600px;
   font-size: 14px; }
   .get-call .get-call__btn {
@@ -1607,6 +1753,10 @@ body {
       text-align: start; }
     .footer .footer__item:last-child {
       text-align: end; } }
+
+@media (min-width: 1440px) {
+  .footer {
+    padding-left: 320px; } }
 
 @font-face {
   font-family: 'TTLakes';
