@@ -4,7 +4,7 @@
   width: 320px;
   height: 100vh;
   top: 0;
-  left: 0;
+  left: -400px;
   bottom: 0;
 
   display: flex;
@@ -15,7 +15,9 @@
   background: #fff;
 
   box-shadow: 16px 0px 52px 0px #0e185033;
-	display: none;
+
+  transition: 0.5s;
+  z-index: 10;
 }
 
 .menu__header {
@@ -82,7 +84,7 @@
 
 .menu__footer {
   margin-top: auto;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .menu__footer .nav-icon {
@@ -141,9 +143,15 @@
   opacity: 0.2;
 }
 
+.menu--isOpen {
+  left: 0;
+}
+
+@media (min-width: 768px) {
+}
 @media (min-width: 1120px) {
   .menu {
-		display: flex;
+    left: 0;
     box-shadow: none;
   }
   .menu__nav-icon--close {

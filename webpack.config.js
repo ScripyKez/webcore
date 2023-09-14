@@ -29,13 +29,13 @@ module.exports = {
           }
         }
       },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader', // Extract css to separate file
-          'css-loader' // translates CSS into CommonJS
-        ]
-      },
+      // {
+      //   test: /\.css$/,
+      //   use: [
+      //     'style-loader', // Extract css to separate file
+      //     'css-loader' // translates CSS into CommonJS
+      //   ]
+      // },
 
       // Компилируем SCSS в CSS
       {
