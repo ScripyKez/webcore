@@ -2,12 +2,19 @@ window.addEventListener('DOMContentLoaded', () => {
   const btnMenuOpen = document.querySelector('.nav__burger')
   const btnMenuClose = document.querySelector('.menu__nav-icon--close')
   const menu = document.querySelector('.menu')
+  let bgDiv = document.createElement('div')
+  bgDiv.className = 'bg-modal'
 
-  const handlerMenu = () => {
+  const menuOpen = () => {
+    menu.before(bgDiv)
     menu.classList.toggle('menu--isOpen')
   }
-  btnMenuOpen.addEventListener('click', handlerMenu)
-  btnMenuClose.addEventListener('click', handlerMenu)
+  const menuClose = () => {
+    menu.previousElementSibling.remove()
+    menu.classList.toggle('menu--isOpen')
+  }
+  btnMenuOpen.addEventListener('click', menuOpen)
+  btnMenuClose.addEventListener('click', menuClose)
 
   document.addEventListener('click', (e) => {
     const menuIsOpen = menu.classList.contains('menu--isOpen')
@@ -16,10 +23,10 @@ window.addEventListener('DOMContentLoaded', () => {
       e.target != btnMenuClose &&
       e.target != btnMenuOpen &&
       e.target !== menu &&
-			menu.contains(e.target) === false
+      menu.contains(e.target) === false
     ) {
-      console.log(`upali`, menu.contains(e.target))
       menu.classList.remove('menu--isOpen')
+      menu.previousElementSibling.remove()
     }
   })
 })

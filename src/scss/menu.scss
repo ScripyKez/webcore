@@ -16,9 +16,8 @@
 
   box-shadow: 16px 0px 52px 0px #0e185033;
 
-
   transition: 0.5s;
-  z-index: 10;
+  z-index: 100;
 }
 
 .menu__header {
@@ -146,6 +145,17 @@
 
 .menu--isOpen {
   left: 0;
+}
+
+.bg-modal {
+  position: fixed;
+  z-index: 10;
+  background: #fff;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 @media (min-width: 768px) {
