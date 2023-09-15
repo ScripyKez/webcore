@@ -6,6 +6,7 @@
 @import './swiper-3.scss';
 @import './get-call.scss';
 @import './footer.scss';
+@import './modal.scss';
 @import '../../node_modules/swiper/swiper-bundle.css';
 
 @font-face {
@@ -26,4 +27,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: $fs-family;
+}
+
+input, textarea{
+  border: none;
 }
